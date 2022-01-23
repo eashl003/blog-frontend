@@ -1,0 +1,25 @@
+#article-descr {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important; /* number of lines to show */
+    -webkit-box-orient: vertical !important;
+    margin-top: 20px !important;
+    margin-left: -3px !important;
+    margin-bottom: 10px !important;
+}
+
+#blog-card {
+    background-color: rgb(249 250 251) !important;
+}
+
+#blog-card:hover { 
+    box-shadow: 4px 4px 5px rgb(229 231 235) ;
+}
+
+.blog-buttons {
+    margin-top: 1rem;
+}  
+
+ 
+

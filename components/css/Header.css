@@ -1,0 +1,143 @@
+#menu-toggle:checked + #menu {
+    display: block;
+    background-color: rgba(8, 49, 58, 1);
+    z-index: 1;
+    padding-bottom: 10px; 
+}
+
+#blog-link, #shop-link {
+    margin-right: 6px !important;  
+    font-size: 20px; 
+}
+
+#menu-link {
+    font-size: 20px; 
+}
+
+#arrow {
+    margin-right: 30px;
+}
+
+#header {
+    background-color: rgba(8, 49, 58, 1);
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 3.5px;
+    color: rgba(133, 197, 178);
+    font-weight: bold;
+    text-transform: lowercase;
+  
+}
+ 
+#brand {
+    font-size: 35px !important; 
+}
+
+.icon {
+    font-size: 13px;
+    color: rgba(133, 197, 178);
+    transform: translate(0px);
+    transition: all .5s ease-in-out;
+}
+
+.icon.open { 
+    transform: translate(0%, 0%) rotate(180deg);
+}
+
+.dropdown-body {
+    padding: 5px; 
+    display: none;
+    text-decoration: none;
+}
+  
+.dropdown-body.open {
+    display: block;
+    text-decoration: none;        
+}
+
+
+@media only screen and (min-width: 1025px){
+    
+    #dropdown {
+        position: relative;
+        display: inline-block;
+    }
+      
+    #dropdown-content {
+        left: 50% !important;
+        right: auto !important;
+        text-align: center !important;
+        transform: translate(-50%, 0) !important;
+        margin-top: 1px;
+        color: #08313A;
+        display: none;
+        position: absolute;
+        background-color: rgba(133, 197, 178, 1);
+        width: 240px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1; 
+    }
+      
+    #dropdown-content {
+        display: block; 
+        font-weight:bold;
+    }
+    
+
+    #shop-link:hover, #blog-link:hover,#menu-link:hover {
+        text-decoration: underline rgba(133, 197, 178) 2.8px;
+        text-underline-offset: 28.5px;
+    }
+
+    #brand:hover {
+        text-decoration: underline rgba(133, 197, 178) 2.8px;
+        text-underline-offset: 22.9px;    
+    }
+   
+   
+}
+ 
+ 
+
+@media only screen and (max-width: 1025px)  {
+
+    #arrow {
+        margin-top: -10px !important;
+        padding-top: 30px !important; 
+    }
+
+    #dropdown-link:hover,#shop-link:hover, #blog-link:hover,#menu-link:hover {  
+        color: #fff;  
+    }
+    
+    .icon.open { 
+        transform: translate(0%, 65%) scaleY(-1) !important;
+    }
+
+    #shop-link, #blog-link, #menu-link{
+        font-size: 25px;
+    }
+    
+    #menu-link {
+        margin-top: -8px;
+        margin-left: -40px;
+    }
+
+    #dropdown-link {
+        margin-left: 14px;
+    }
+
+    #dropdown {
+        text-align: center;
+    }
+
+    #dropdown-content { 
+        text-align: left;
+        margin-left: 45%;
+    }
+}
+
+
+
+
+
