@@ -1,4 +1,4 @@
-const { colors } = require(`tailwindcss/defaultTheme`);
+const { colors } = require(`tailwindcss/defaultTheme`)
 
 module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
@@ -16,4 +16,4 @@ module.exports = {
       },
     },
   },
-};
+}

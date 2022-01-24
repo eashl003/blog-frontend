@@ -1,5 +1,3 @@
-
-
 import Footer from "./Footer"
 import Header from "./Header"
 
@@ -7,8 +5,8 @@ const Layout = ({ children, categories, blogs }) => {
   return (
     <div className="flex justify-center bg-stone-100  ">
       <div className="flex flex-col min-h-screen w-full">
-        <Header categories={categories} blogs={blogs}  />
-        
+        <Header categories={categories} blogs={blogs} />
+
         <div className="flex-grow">{children}</div>
         <Footer />
       </div>

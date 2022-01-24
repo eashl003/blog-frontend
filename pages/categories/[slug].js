@@ -4,7 +4,7 @@ import ProductsList from "../../components/ProductsList"
 import { getCategories, getCategory } from "../../utils/api"
 import { getProducts, getProduct } from "../../utils/api"
 
-const CategoryPage = ({ category}) => {
+const CategoryPage = ({ category }) => {
   const router = useRouter()
   if (router.isFallback) {
     return <div>Loading category...</div>
