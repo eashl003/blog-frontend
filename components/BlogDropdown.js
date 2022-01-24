@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import Link from "next/link"
 
 const data = [
   { id: 0, label: "Istanbul, TR (AHL)" },

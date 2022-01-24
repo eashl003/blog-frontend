@@ -1,6 +1,6 @@
 import NextImage from "./Image"
 import Link from "next/link"
-import Image from 'next/image'
+import Image from "next/image"
 
 const PopularPosts = ({ featuredArticles }) => {
   return (
@@ -56,5 +56,3 @@ const PopularPosts = ({ featuredArticles }) => {
 }
 
 export default PopularPosts
-
- 

@@ -16,9 +16,9 @@ const Header = ({ categories = [], blogs = [] }) => {
       className="lg:px-20 flex flex-wrap items-center lg:py-0 py-2 h-20"
     >
       <div className="flex-1 flex justify-between items-center ml-10">
-        <a id="brand" href="/">
+        <Link id="brand" href="/" passHref>
           elisabeth
-        </a>
+        </Link>
       </div>
       <label htmlFor="menu-toggle" className="cursor-pointer lg:hidden block">
         <svg
@@ -39,9 +39,9 @@ const Header = ({ categories = [], blogs = [] }) => {
         <nav>
           <ul className="lg:flex items-center justify-between pt-4 ml-10 lg:pt-0">
             <div id="dropdown">
-              <a id="blog-link" className="font-bold" href="/blog">
+              <Link id="blog-link" className="font-bold" href="/blog" passHref>
                 Blog
-              </a>
+              </Link>
               <i
                 id="arrow"
                 className={`fa fa-chevron-up icon ${isOpen && "open"}`}
@@ -53,7 +53,7 @@ const Header = ({ categories = [], blogs = [] }) => {
                     blogs.map((_blog) => {
                       return (
                         <li key={_blog.id}>
-                          <Link href={`/blogs/${_blog.slug}`}>
+                          <Link href={`/blogs/${_blog.slug}`} passHref>
                             <a
                               id="dropdown-link"
                               className="lg:p-1 py-3 px-0 block"
@@ -68,9 +68,9 @@ const Header = ({ categories = [], blogs = [] }) => {
               </div>
             </div>
             <div id="dropdown">
-              <a id="shop-link" className="font-bold" href="/shop">
+              <Link id="shop-link" className="font-bold" href="/shop" passHref>
                 Shop
-              </a>
+              </Link>
               <i
                 id="arrow"
                 className={`fa fa-chevron-up icon ${isShopOpen && "open"}`}
@@ -98,13 +98,14 @@ const Header = ({ categories = [], blogs = [] }) => {
             <div id="dropdown">
               <ul>
                 <li>
-                  <a
+                  <Link
                     id="menu-link"
                     className="lg:p-4 py-3 px-0 block font-bold"
                     href="/about"
+                    passHref
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

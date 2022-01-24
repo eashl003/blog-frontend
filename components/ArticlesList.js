@@ -7,7 +7,7 @@ const ArticlesList = ({ articles }) => {
       {articles.map((_article) => (
         <div key={_article.id} className="flex flex-col md:flex-row mt-8 ">
           <div className="w-full  mr-8">
-            <Link href={`/articles/${_article.slug}`}>
+            <Link href={`/articles/${_article.slug}`} passHref>
               <div
                 id="blog-card"
                 className="flex border border-grey-light rounded overflow-hidden shadow"
