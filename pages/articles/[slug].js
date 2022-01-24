@@ -1,7 +1,6 @@
 import { useRouter } from "next/router"
 import { getArticles, getArticle } from "../../utils/api"
 import NextImage from "../../components/Image"
- 
 
 const ArticlePage = ({ article }) => {
   const router = useRouter()
@@ -13,9 +12,7 @@ const ArticlePage = ({ article }) => {
     <div className="m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-8">
       <h1>{article.title}</h1>
       <div>
-        <div>
-          
-        </div>
+        <div></div>
       </div>
       <div className="rounded-t-lg pt-2 pb-2 m-auto h-40 w-40">
         <NextImage media={article.image} />
