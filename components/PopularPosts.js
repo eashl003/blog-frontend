@@ -19,11 +19,11 @@ const PopularPosts = ({ featuredArticles }) => {
           <div className="flex-grow">
             <h2 className="text-gray-900 text-lg title-font font-medium mb-3">{_featuredArticle.title} </h2>
             <p className="leading-relaxed text-base">{_featuredArticle.description}</p>
-            <a className="mt-3 text-teal-900 inline-flex items-center">Continue Reading
+            <Link className="mt-3 text-teal-900 inline-flex items-center">Continue Reading
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
         ))}

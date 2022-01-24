@@ -8,18 +8,18 @@ const RecentList = ({ recentArticles }) => {
         {recentArticles.slice(0,3).map((_recentArticle) => (
         <div key={_recentArticle.id} className="grid mr-12"> 
         <div className="rounded overflow-hidden shadow-lg flex flex-col mb-8">
-            <a href="#">
+            <Link href="#">
             <NextImage media={_recentArticle.image} />
-            </a>
+            </Link>
         <div className="px-6 py-4 mb-auto">
             <div className="mb-3">
-                <a href="#" className="text-xs font-bold category-name">
+                <Link href="#" className="text-xs font-bold category-name">
                 {_recentArticle.category_name} 
-                </a> 
+                </Link> 
            </div>
-                <a href="#" className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">
+                <Link href="#" className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">
                     {_recentArticle.title} 
-                </a>
+                </Link>
         <p id="article-descr" className="text-gray-500 text-sm">
         {_recentArticle.description}
         </p>
