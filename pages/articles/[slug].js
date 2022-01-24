@@ -1,9 +1,7 @@
 import { useRouter } from "next/router"
 import { getArticles, getArticle } from "../../utils/api"
 import NextImage from "../../components/Image"
-import ReactMarkdown from "react-markdown"
-import Moment from "react-moment"
-//import Markdown from "../../components/Markdown"
+ 
 
 const ArticlePage = ({ article }) => {
   const router = useRouter()
@@ -16,9 +14,7 @@ const ArticlePage = ({ article }) => {
       <h1>{article.title}</h1>
       <div>
         <div>
-          <div>
-            <ReactMarkdown escapeHtml={false}>{article.content}</ReactMarkdown>
-          </div>
+          
         </div>
       </div>
       <div className="rounded-t-lg pt-2 pb-2 m-auto h-40 w-40">
